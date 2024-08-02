@@ -1,0 +1,21 @@
+api_url: "https://example.com/api" # Base URL for the SmartHub API
+username: "your_username"  # Your SmartHub username
+password: "your_password"  # Your SmartHub password
+account: "your_account"    # Your SmartHub account number
+service_location: "your_service_location"    # Your SmartHub service location
+extract_days: 365 
+output_file_usage: "/path/to/output_file.json" #If using ElectricUsagewithPrices.py
+price_per_kw: 0.12
+retain_days: 90  # Number of days for the JSON to keep while adding data
+interval: "HOURLY"  # Possible values: HOURLY, MONTHLY, ACTUAL (15min intervals)
+output_to_cli: #True #False by default uncomment if need be.
+influxdb: 
+  url: "influxdb_url"
+  token: "api_token"
+  org: "influxdb_org"
+  bucket: "bucket"
+  retention_days: 30  # Set the retention period for your data
+
+
+## May need to define config.yaml path in ElectricMeter.py 
+## Find config = load_config('ADD_PATH_HERE/config.yaml')  # Load configuration
