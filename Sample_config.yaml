@@ -17,5 +17,5 @@ influxdb:
   retention_days: 30  # Set the retention period for your data
 
 
-## May need to define config.yaml path in ElectricMeter.py 
+## May need to define config.yaml path in Electric*.py script 
 ## Find config = load_config('ADD_PATH_HERE/config.yaml')  # Load configuration
